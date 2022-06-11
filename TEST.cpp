@@ -19,7 +19,7 @@ vect.push_back(p3);
 vect.push_back(p4);
 vect.push_back(p5);
 int y=1;
-for(process_info x:vect)
+for(process_info &x:vect)
 {
 for(int i=0; i<4; i++)
 {
@@ -33,7 +33,7 @@ cin>>x.wanted[i];
 }
 y++;
 }
-for(process_info x:vect)
+for(process_info &x:vect)
 {
     for(int i=0; i<4; i++)
     {
